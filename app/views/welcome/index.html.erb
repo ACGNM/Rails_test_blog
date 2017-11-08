@@ -1,1 +1,9 @@
 <h1>Hello,Rails!</h1>
+
+<%# 直接用controller控制链接位置 %>
+<%= link_to 'My Blog', controller: 'articles' %>
+
+<%# 用routes中的路径作为链接，与上面等效 %>
+<%= link_to 'Back', articles_path %>
+
+<%= link_to 'New', new_article_path %>
